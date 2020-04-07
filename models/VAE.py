@@ -216,6 +216,8 @@ class VariationalAutoencoder():
         callbacks_list = [checkpoint1, checkpoint2, custom_callback, lr_sched]
 
         self.model.save_weights(os.path.join(run_folder, 'weights/weights.h5'))
+
+
                 
         self.model.fit_generator(
             data_flow
